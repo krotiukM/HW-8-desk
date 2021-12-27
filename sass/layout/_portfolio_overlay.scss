@@ -1,0 +1,24 @@
+.portfolio_item_wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_item_top_text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  width: 370px;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  .portfolio_item:hover & {
+    transform: translateY(0);
+  }
+}
