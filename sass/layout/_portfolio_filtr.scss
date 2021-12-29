@@ -10,12 +10,14 @@
 
 .portfolio_list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
-.portfolio_list .btn + .btn {
-  margin-left: 8px;
+.portfolio_list .btn-filtr {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .button {

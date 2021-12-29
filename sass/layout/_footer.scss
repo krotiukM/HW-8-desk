@@ -2,16 +2,39 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  // @media screen and (min-width: 480px) {}
+  // @media screen and (min-width: 768px) {}
+  // @media screen and (min-width: 1200px) {}
 }
 
 .container-ad {
+  // border: 1px solid red;
+
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-address {
   width: 231px;
   height: 132px;
+  // border: 1px solid rgb(0, 255, 115);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .logo__light {
@@ -48,6 +71,9 @@
 
 .footer-address__list {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer-address__items {
@@ -60,9 +86,21 @@
 // -------------- add_contacts ----------//
 
 .add_contacts {
-  margin-left: 70px;
   width: 206px;
   height: 80px;
+  // border: 1px solid rgb(0, 47, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 90px;
+  }
 }
 
 .add_contacts__title {
@@ -110,9 +148,13 @@
 
 // ----------- subscribe to online ---------//
 .online {
-  margin-left: 93px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  // border: 1px solid rgb(208, 255, 0);
   width: 570px;
-  height: 86px;
 }
 
 .online__title {
@@ -125,9 +167,22 @@
   margin-bottom: 20px;
 }
 
+.online-form {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .online__item {
   justify-content: center;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .online__form-input {
@@ -147,6 +202,10 @@
   margin-right: 12px;
   background-color: #2f303a;
   padding-left: 16px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .online__btn {

@@ -27,15 +27,22 @@
   transform: translate(-50%, -50%);
   transition: transform 500ms;
   padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal__close {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 1px solid #999999;
-  border-radius: 50%;
   position: absolute;
+  border: none;
   top: 10px;
   right: 10px;
   display: flex;
@@ -144,8 +151,8 @@
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -175,8 +182,8 @@
 .agreement-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #2196f3;
   margin-left: 5px;
