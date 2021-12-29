@@ -1,25 +1,64 @@
 .hero_section {
+  // background-color: #2f303a;
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //   url(../images/hero-bg.jpg);
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+    url(../images/header-mob-1x.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-mob-2x.jpg);
+  }
+
+  @media screen and (min-width: 780px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-tab-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-2x.jpg);
+    }
+  }
 }
 
 .hero_section__h1 {
+  // margin-bottom: 30px;
+  width: 360px;
+  height: 84px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 30px;
-  width: 645px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 645px;
+    height: 120px;
+  }
 }
 
 .hero_section__btn {
@@ -34,4 +73,5 @@
   &:hover {
     border: 2px solid #2196f3;
   }
+  margin-top: 30px;
 }

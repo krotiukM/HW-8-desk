@@ -308,7 +308,7 @@ body {
 }
 
 .header-nav__list {
-  display: flex;
+  display: none;
 }
 
 .header-logo {
@@ -353,7 +353,7 @@ body {
 }
 
 .header-connect {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -412,27 +412,105 @@ body {
   margin-right: 10px;
 }
 
+.open-menu-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.mob-munu {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  padding: 10px 15px 48px 40px;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+.close-menu-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu-btn:focus, .close-menu-btn:hover {
+  background-color: #2196f3;
+  outline: none;
+}
+
 .hero_section {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob-1x.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero_section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .hero_section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tab-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 780px) and (min-device-pixel-ratio: 2), screen and (min-width: 780px) and (min-resolution: 192dpi), screen and (min-width: 780px) and (min-resolution: 2dppx) {
+  .hero_section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tab-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero_section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-2x.jpg);
+  }
+}
+
 .hero_section__h1 {
+  width: 360px;
+  height: 84px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 30px;
-  width: 645px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_section__h1 {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 645px;
+    height: 120px;
+  }
 }
 
 .hero_section__btn {
@@ -443,6 +521,7 @@ body {
   left: 700px;
   top: 430px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 30px;
 }
 
 .hero_section__btn:focus, .hero_section__btn:hover {
@@ -566,6 +645,7 @@ body {
 
 .about_section__list {
   display: flex;
+  margin-top: 50px;
 }
 
 .about_section__item {
@@ -599,6 +679,12 @@ body {
   justify-content: center;
 }
 
+.our_team {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .our_team {
     padding-top: 94px;
@@ -616,6 +702,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our_team-title {
+    padding-top: 50px;
   }
 }
 
@@ -701,6 +793,10 @@ body {
 
 .social-list__icon {
   fill: currentColor;
+}
+
+.customers {
+  background: #ffffff;
 }
 
 @media screen and (min-width: 480px) {
