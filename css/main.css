@@ -313,6 +313,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1199px) {
