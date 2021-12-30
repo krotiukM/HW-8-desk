@@ -474,6 +474,7 @@ body {
 
 .open-menu-btn {
   margin-left: auto;
+  margin-right: auto;
   border: none;
   background-color: transparent;
 }
@@ -987,6 +988,7 @@ body {
   .customers__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
   }
 }
 
