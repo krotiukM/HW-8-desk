@@ -313,7 +313,12 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  margin-left: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .header-container {
+    margin-left: 0;
+  }
 }
 
 .header-logo {
@@ -975,6 +980,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

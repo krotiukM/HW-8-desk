@@ -6,8 +6,12 @@
 .header-container {
   display: flex;
   align-items: center;
-  margin-left: 0;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 0;
+  }
 }
+
 .header-logo {
   padding: 24px 0 25px 0;
   margin: 0 93px 0 0;
