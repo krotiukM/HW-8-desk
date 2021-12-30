@@ -149,8 +149,8 @@ body {
 }
 
 .modal__close:focus, .modal__close:hover {
-  background-color: #2196f3;
   outline: none;
+  fill: #2196f3;
 }
 
 .modal__title {
