@@ -37,13 +37,15 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/header-2x.jpg);
     }
+
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 .hero_section__h1 {
   // margin-bottom: 30px;
   width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;

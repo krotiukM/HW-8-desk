@@ -10,14 +10,17 @@
 
 .container-ad {
   // border: 1px solid red;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -99,7 +102,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 
@@ -159,6 +162,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 460px;
   }
   // border: 1px solid rgb(208, 255, 0);
   width: 570px;
@@ -172,6 +176,9 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .online-form {
@@ -212,6 +219,7 @@
 
   @media screen and (max-width: 1199px) {
     width: 450px;
+    margin-right: 0;
   }
 }
 

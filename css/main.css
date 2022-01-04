@@ -49,7 +49,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
   }
 }
 
@@ -522,6 +522,7 @@ body {
   height: 100vh;
   z-index: 5;
   padding: 10px 15px 48px 40px;
+  left: 0;
 }
 
 .mob-munu .container {
@@ -657,6 +658,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero_section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-1x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -668,7 +671,6 @@ body {
 
 .hero_section__h1 {
   width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -706,6 +708,9 @@ body {
 .middle_section {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -895,6 +900,9 @@ body {
 }
 
 .our_team-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
   padding-top: 30px;
   margin-bottom: -30px;
 }
@@ -1004,7 +1012,7 @@ body {
 @media screen and (min-width: 480px) {
   .customers {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1026,8 +1034,8 @@ body {
   .customers__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
     padding-top: 30px;
+    margin-left: -30px;
   }
 }
 
@@ -1049,10 +1057,10 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .customers__item {
-    flex-basis: calc(100% / 2 - 30px);
     width: 210px;
     height: 92px;
-    margin: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1104,16 +1112,20 @@ body {
   padding-bottom: 60px;
 }
 
-.container-ad {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container-ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container-ad {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -1205,7 +1217,7 @@ body {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .add_contacts {
     margin-bottom: 60px;
   }
@@ -1272,6 +1284,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 460px;
   }
 }
 
@@ -1283,6 +1296,12 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .online__title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1328,6 +1347,7 @@ body {
 @media screen and (max-width: 1199px) {
   .online__form-input {
     width: 450px;
+    margin-right: 0;
   }
 }
 
