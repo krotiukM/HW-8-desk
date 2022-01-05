@@ -1428,7 +1428,7 @@ body {
 }
 
 .portfolio_section-title {
-  padding-top: 46px;
+  padding-top: 40px;
   margin-bottom: -30px;
 }
 
@@ -1509,7 +1509,7 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  width: 370px;
+  width: 100%;
   height: 100%;
   overflow: auto;
   transform: translateY(100%);
@@ -1518,5 +1518,12 @@ body {
 
 .portfolio_item:hover .portfolio_item_top_text {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio_item_top_text {
+    height: 294px;
+    padding: 49px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
